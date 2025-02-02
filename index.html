@@ -11,8 +11,8 @@
       <h1>Сервис комментариев со спам фильтром</h1>
       <div class="comments-wrap">
         <div class="comments-form">
-          <h2 class="comments-title">Оставьте ваш комментарий</h2>
-          <form action="">
+          <h2 class="form-title">Оставьте ваш комментарий</h2>
+          <form action="#">
             <div class="block-name">
               <label for="name">Введите ваше <span>Имя:</span></label>
               <input type="text" id="name" name="name" />
@@ -25,20 +25,20 @@
             </div>
             <div class="block-comment">
               <label for="comment">Оставьте ваш комментарий:</label>
-              <textarea id="comment" name="comment"></textarea>
+              <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
             </div>
           </form>
           <button id="form-button" class="btn">Отправить</button>
         </div>
         <div class="comments-chat">
           <h2 class="chat-title">Чат</h2>
-          <div class="chat-wrap">
-            <div class="chat-top">
+          <div class="chat-wrap" id="chat-list">
+            <!-- <div class="chat-top">
               <img id="avatar-img" src="" alt="avatar image" />
               <p id="chat-name"></p>
             </div>
             <div class="chat-bottom">
-              <p id="chat-comment"></p>
+              <p id="chat-comment"></p> -->
             </div>
           </div>
         </div>

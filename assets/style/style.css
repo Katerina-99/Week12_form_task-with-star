@@ -6,10 +6,25 @@
   padding: 0;
 }
 
+img {
+  max-width: 120px;
+}
+
 .comments-wrap {
   display: flex;
   gap: 30px;
 }
+
+.comments-form {
+  width: 50%;
+}
+
+/* .comments-chat {
+  width: 40%;
+} */
+
 .chat-wrap {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
