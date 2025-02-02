@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Сервис комментариев</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Сервис комментариев со спам фильтром</h1>
+      <div class="comments-wrap">
+        <div class="comments-form">
+          <h2 class="comments-title">Оставьте ваш комментарий</h2>
+          <form action="">
+            <div class="block-name">
+              <label for="name">Введите ваше <span>Имя:</span></label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="block-avatar">
+              <label for="avatar"
+                >Введите ссылку <span>вашего аватара:</span></label
+              >
+              <input type="text" id="avatar" name="avatar" />
+            </div>
+            <div class="block-comment">
+              <label for="comment">Оставьте ваш комментарий:</label>
+              <textarea id="comment" name="comment"></textarea>
+            </div>
+          </form>
+          <button id="form-button" class="btn">Отправить</button>
+        </div>
+        <div class="comments-chat">
+          <h2 class="chat-title">Чат</h2>
+          <div class="chat-wrap">
+            <div class="chat-top">
+              <img id="avatar-img" src="" alt="avatar image" />
+              <p id="chat-name"></p>
+            </div>
+            <div class="chat-bottom">
+              <p id="chat-comment"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
