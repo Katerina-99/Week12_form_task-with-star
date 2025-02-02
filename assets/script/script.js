@@ -20,17 +20,18 @@ const addComment = () => {
 
   const chatAvatar = document.createElement("img");
   chatAvatar.src = avatarValue;
-  chatAvatar.style = "margin-right: 10px;";
+  chatAvatar.style = "margin-right: 10px; margin-bottom: 10px;";
   chatList.append(chatAvatar);
 
   const chatName = document.createElement("span");
   chatName.innerText =
     nameValue[0].toUpperCase() + nameValue.slice(1).toLowerCase();
+  chatName.style.color = "white";
   chatList.append(chatName);
 
   const chatComment = document.createElement("p");
   chatComment.innerText = commentValue;
-  chatComment.style = "flex-basis: 100%; margin-bottom: 15px;";
+  chatComment.style = "flex-basis: 100%; margin-bottom: 15px; color: white;";
   chatList.append(chatComment);
 
   inputAvatar.value = "";

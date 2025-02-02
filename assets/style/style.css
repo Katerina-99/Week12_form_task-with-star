@@ -6,22 +6,73 @@
   padding: 0;
 }
 
+body {
+  background-color: #1b1b1b;
+}
+
+h2 {
+  color: #6694eb;
+  margin-bottom: 20px;
+}
+
+label {
+  color: white;
+}
+
 img {
   max-width: 120px;
 }
 
+input,
+textarea {
+  background-color: transparent;
+  border: 2px dashed #6694eb;
+  padding: 10px;
+  color: white;
+}
+
+.container {
+  padding: 30px;
+}
+
+.title {
+  color: white;
+  margin-bottom: 30px;
+}
+
 .comments-wrap {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .comments-form {
-  width: 50%;
+  min-width: 45%;
 }
 
-/* .comments-chat {
-  width: 40%;
-} */
+.block-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.block-avatar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.block-comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #6694eb;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+}
 
 .chat-wrap {
   display: flex;

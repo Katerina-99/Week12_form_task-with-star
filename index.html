@@ -6,41 +6,40 @@
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>Сервис комментариев</title>
   </head>
+
   <body>
     <div class="container">
-      <h1>Сервис комментариев со спам фильтром</h1>
+      <h1 class="title">Сервис комментариев со спам фильтром</h1>
       <div class="comments-wrap">
         <div class="comments-form">
-          <h2 class="form-title">Оставьте ваш комментарий</h2>
+          <h2>Оставьте ваш комментарий</h2>
           <form action="#">
             <div class="block-name">
               <label for="name">Введите ваше <span>Имя:</span></label>
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" required />
             </div>
             <div class="block-avatar">
               <label for="avatar"
                 >Введите ссылку <span>вашего аватара:</span></label
               >
-              <input type="text" id="avatar" name="avatar" />
+              <input type="text" id="avatar" name="avatar" required />
             </div>
             <div class="block-comment">
               <label for="comment">Оставьте ваш комментарий:</label>
-              <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+              <textarea
+                id="comment"
+                name="comment"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
             </div>
           </form>
           <button id="form-button" class="btn">Отправить</button>
         </div>
         <div class="comments-chat">
-          <h2 class="chat-title">Чат</h2>
-          <div class="chat-wrap" id="chat-list">
-            <!-- <div class="chat-top">
-              <img id="avatar-img" src="" alt="avatar image" />
-              <p id="chat-name"></p>
-            </div>
-            <div class="chat-bottom">
-              <p id="chat-comment"></p> -->
-            </div>
-          </div>
+          <h2>Чат</h2>
+          <div class="chat-wrap" id="chat-list"></div>
         </div>
       </div>
     </div>
